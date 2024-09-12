@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Roman Converter Page</title>
+		<link rel="stylesheet" th:href="@{/css/styles.css}" />
+	</head>
+	<body>
+		<div class="card">
+			<div th:if="${integerConverter != null}">
+				<div class="feature-title">
+					<h3>Roman Converter</h3>
+				</div>
+
+				<div class="container">
+					<div class="wrapper">
+						<h3>
+							Decimal:
+							<span th:text="${integerConverter.getNum()}"></span>
+						</h3>
+					</div>
+					<div class="wrapper">
+						<h3>
+							Roman:
+							<span
+								th:text="${integerConverter.convertIntegerToRoman()}"
+							></span>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Roman Converter Page</title>
+		<link rel="stylesheet" th:href="@{/css/styles.css}" />
+
+        <style>
+			.container h3 {
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="feature-title">
+				<h3>Roman Converter</h3>
+			</div>
+			<div class="container" style="text-align: left;">
+				<h3>Nama: <span th:text="${nama}">insertNama</span></h3>
+				<h3>NPM: <span th:text="${npm}">insertNPM</span></h3>
+			</div>
+		</div>
+	</body>
+</html>
